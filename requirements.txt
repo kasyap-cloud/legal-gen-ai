@@ -1,7 +1,17 @@
-streamlit
-google-cloud-storage
-google-cloud-documentai
-google-cloud-firestore
-python-dotenv
-langchain_text_splitters
-# pip install streamlit google-cloud-storage google-cloud-documentai google-cloud-firestore google-cloud-aiplatform python-dotenv
+streamlit==1.38.0
+python-dotenv==1.0.1
+vertexai
+
+# Google Cloud SDKs
+google-cloud-storage==2.18.2
+google-cloud-firestore==2.17.0
+google-cloud-documentai==2.30.0
+google-auth==2.35.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+
+# Vertex AI
+google-cloud-aiplatform==1.71.1
+
+# Utils
+protobuf==4.25.3

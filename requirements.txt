@@ -1,0 +1,7 @@
+streamlit
+google-cloud-storage
+google-cloud-documentai
+google-cloud-firestore
+python-dotenv
+langchain_text_splitters
+# pip install streamlit google-cloud-storage google-cloud-documentai google-cloud-firestore google-cloud-aiplatform python-dotenv

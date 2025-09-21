@@ -23,9 +23,8 @@ SERVICE_ACCOUNT_KEY_PATH = os.getenv("SERVICE_ACCOUNT_KEY_PATH", "service_accoun
 # -------------------------
 # Regions
 # -------------------------
-DOC_AI_REGION = "us"          # Document AI must use "us"
-RAG_REGION = "us-east4"       # Vertex RAG supported region
-
+DOC_AI_REGION = "us"         
+RAG_REGION = "us-east4"       
 # -------------------------
 # Credentials
 # -------------------------
@@ -137,9 +136,7 @@ def setup_rag_corpus_from_gcs(gcs_paths):
     rag.import_files(corpus_name=corpus.name, paths=gcs_paths)
     return corpus
 
-# -------------------------
-# Wait until corpus ingestion is done (Option 1: skip explicit check)
-# -------------------------
+
 def wait_for_indexing(corpus, timeout=120):
     st.info("Skipping explicit indexing check (assuming ingestion will complete).")
     return True
